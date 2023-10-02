@@ -1,0 +1,16 @@
+doctype html
+html
+    head
+        title #{title}
+        link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.3/css/bootstrap.min.css')
+        
+    body
+        .container
+            h1 Selamat datang, #{nama}
+            img(src='/images/bg.jpg')
+            form
+                input(type='text', class='form-control', placeholder='Nama', value='#{nama}')
+                input(type='text', class='form-control', placeholder='NPM', value='#{npm}')
+                input(type='submit', class='btn btn-primary')
+
+        script(src='https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js')
